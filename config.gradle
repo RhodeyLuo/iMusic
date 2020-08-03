@@ -1,0 +1,25 @@
+/**
+ * 在主项目的根目录下创建config.gradle文件
+ * 在这里单独处理统一依赖问题
+ * 注意需要在根目录的build.gradle中进行引入 apply from: "config.gradle"
+ */
+ext {
+    android = [
+            compileSdkVersion: 28,
+            targetSdkVersion : 28,
+            applicationId    : 'com.rhodey.imusic',
+            minSdkVersion    : 16,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+
+    librariesVersion = [
+            appcompatVersion       : '28.0.0',
+            constraintLayoutVersion: '1.1.3'
+    ]
+
+    supportLibraries = [
+            appcompat       : "com.android.support:appcompat-v7:${librariesVersion.appcompatVersion}",
+            constraintLayout: "com.android.support.constraint:constraint-layout:${librariesVersion.constraintLayoutVersion}"
+    ]
+}
