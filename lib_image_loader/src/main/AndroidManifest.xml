@@ -1,4 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.rhodey.lib_image_loader">
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

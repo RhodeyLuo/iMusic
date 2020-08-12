@@ -28,5 +28,5 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation libraries.appcompat
     implementation libraries.constraintLayout
-//    implementation project(':lib_image_loader')
+    implementation project(':lib_image_loader')
 }
